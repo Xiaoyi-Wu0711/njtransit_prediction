@@ -1,0 +1,104 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>hv_table_weather</title>
+      
+      
+        
+          
+        <link rel="stylesheet" href="https://unpkg.com/@holoviz/panel@0.12.6/dist/css/alerts.css" type="text/css" />
+        <link rel="stylesheet" href="https://unpkg.com/@holoviz/panel@0.12.6/dist/css/card.css" type="text/css" />
+        <link rel="stylesheet" href="https://unpkg.com/@holoviz/panel@0.12.6/dist/css/dataframe.css" type="text/css" />
+        <link rel="stylesheet" href="https://unpkg.com/@holoviz/panel@0.12.6/dist/css/json.css" type="text/css" />
+        <link rel="stylesheet" href="https://unpkg.com/@holoviz/panel@0.12.6/dist/css/loading.css" type="text/css" />
+        <link rel="stylesheet" href="https://unpkg.com/@holoviz/panel@0.12.6/dist/css/markdown.css" type="text/css" />
+        <link rel="stylesheet" href="https://unpkg.com/@holoviz/panel@0.12.6/dist/css/widgets.css" type="text/css" />
+        <style>
+            
+                    .bk.pn-loading.arcs:before {
+                      background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBzdHlsZT0ibWFyZ2luOiBhdXRvOyBiYWNrZ3JvdW5kOiBub25lOyBkaXNwbGF5OiBibG9jazsgc2hhcGUtcmVuZGVyaW5nOiBhdXRvOyIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIj4gIDxjaXJjbGUgY3g9IjUwIiBjeT0iNTAiIHI9IjMyIiBzdHJva2Utd2lkdGg9IjgiIHN0cm9rZT0iI2MzYzNjMyIgc3Ryb2tlLWRhc2hhcnJheT0iNTAuMjY1NDgyNDU3NDM2NjkgNTAuMjY1NDgyNDU3NDM2NjkiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCI+ICAgIDxhbmltYXRlVHJhbnNmb3JtIGF0dHJpYnV0ZU5hbWU9InRyYW5zZm9ybSIgdHlwZT0icm90YXRlIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgZHVyPSIxcyIga2V5VGltZXM9IjA7MSIgdmFsdWVzPSIwIDUwIDUwOzM2MCA1MCA1MCI+PC9hbmltYXRlVHJhbnNmb3JtPiAgPC9jaXJjbGU+PC9zdmc+");
+                      max-height: 400px;
+                    }
+                    
+        </style>
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.4.2.min.js"></script>
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-gl-2.4.2.min.js"></script>
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.4.2.min.js"></script>
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.4.2.min.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/@holoviz/panel@0.12.6/dist/panel.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="ae6d860f-0553-4e6f-8408-a784daa465e2" data-root-id="2633"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="2677">
+          {"127e9cd0-be98-45c2-835f-19473734c53b":{"defs":[{"extends":null,"module":null,"name":"ReactiveHTML1","overrides":[],"properties":[]},{"extends":null,"module":null,"name":"FlexBox1","overrides":[],"properties":[{"default":"flex-start","kind":null,"name":"align_content"},{"default":"flex-start","kind":null,"name":"align_items"},{"default":"row","kind":null,"name":"flex_direction"},{"default":"wrap","kind":null,"name":"flex_wrap"},{"default":"flex-start","kind":null,"name":"justify_content"}]},{"extends":null,"module":null,"name":"TemplateActions1","overrides":[],"properties":[{"default":0,"kind":null,"name":"open_modal"},{"default":0,"kind":null,"name":"close_modal"}]},{"extends":null,"module":null,"name":"MaterialTemplateActions1","overrides":[],"properties":[{"default":0,"kind":null,"name":"open_modal"},{"default":0,"kind":null,"name":"close_modal"}]}],"roots":{"references":[{"attributes":{},"id":"2643","type":"StringEditor"},{"attributes":{"columns":[{"id":"2639"},{"id":"2644"},{"id":"2649"}],"height":300,"reorderable":false,"source":{"id":"2635"},"view":{"id":"2654"},"width":800},"id":"2652","type":"DataTable"},{"attributes":{"source":{"id":"2635"}},"id":"2654","type":"CDSView"},{"attributes":{"data":{"Description":["fastest 2-minute wind speed","precipitation","max temperature","Snowfall","Fog","Haze","Ice pellets"],"Type":["numeric","numeric","numeric","numeric","numeric","numeric","categorical"],"Variable":["wea_Fastest_2min_win_spd","wea_Precipitation","wea_Max_temp","wea_Snowfall","wea_Fog","wea_Haze","wea_Ice_pellets"]},"selected":{"id":"2636"},"selection_policy":{"id":"2655"}},"id":"2635","type":"ColumnDataSource"},{"attributes":{},"id":"2655","type":"UnionRenderers"},{"attributes":{},"id":"2642","type":"StringFormatter"},{"attributes":{},"id":"2636","type":"Selection"},{"attributes":{},"id":"2637","type":"StringFormatter"},{"attributes":{"children":[{"id":"2634"},{"id":"2652"},{"id":"2659"}],"margin":[0,0,0,0],"name":"Row05008","tags":["embedded"]},"id":"2633","type":"Row"},{"attributes":{"editor":{"id":"2648"},"field":"Description","formatter":{"id":"2647"},"title":"Description"},"id":"2649","type":"TableColumn"},{"attributes":{},"id":"2648","type":"StringEditor"},{"attributes":{"margin":[5,5,5,5],"name":"HSpacer05012","sizing_mode":"stretch_width"},"id":"2634","type":"Spacer"},{"attributes":{},"id":"2647","type":"StringFormatter"},{"attributes":{"editor":{"id":"2643"},"field":"Type","formatter":{"id":"2642"},"title":"Type"},"id":"2644","type":"TableColumn"},{"attributes":{"margin":[5,5,5,5],"name":"HSpacer05013","sizing_mode":"stretch_width"},"id":"2659","type":"Spacer"},{"attributes":{"editor":{"id":"2638"},"field":"Variable","formatter":{"id":"2637"},"title":"Variable"},"id":"2639","type":"TableColumn"},{"attributes":{},"id":"2638","type":"StringEditor"}],"root_ids":["2633"]},"title":"Bokeh Application","version":"2.4.2"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            const fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  const docs_json = document.getElementById('2677').textContent;
+                  const render_items = [{"docid":"127e9cd0-be98-45c2-835f-19473734c53b","root_ids":["2633"],"roots":{"2633":"ae6d860f-0553-4e6f-8408-a784daa465e2"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    let attempts = 0;
+                    const timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
