@@ -1,4 +1,4 @@
-# Link of the Website: https://xiaoyi-wu0711.github.io/nj_transit_model/
+# [Link of the Website](https://penelope0318.github.io/NJ_Transit_Train_Delay/)
 
 ![NJ_Transit_Amtrak](https://github.com/Xiaoyi-Wu0711/nj_transit_model/blob/main/assets/images/us_njtransit_nec.jpeg)
 
